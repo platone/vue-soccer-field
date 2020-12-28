@@ -1,0 +1,347 @@
+
+
+@font-face {
+  font-family: "Questrial";
+  src: url('../fonts/big_noodle_titling.ttf');
+}
+
+.ground {
+  background-color: #238729;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ground:before{
+  content: "";
+  border: 1px solid white;
+  border-width: 1px 0 1px 1px;
+  position: absolute;
+  top :5%;
+  left :5%;
+  display:block;
+  width: 44%;
+  height:90%;
+}
+
+.ground:after{
+  content: "";
+  border: 1px solid white;
+  border-width: 1px 1px 1px 0;
+  position: absolute;
+  top :5%;
+  right :5%;
+  display:block;
+  width: 44%;
+  height:90%;
+}
+
+.pitch {
+  background-color: #238729;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.pitch:after{
+  content: "";
+  border-left: 1px solid white;
+  position: absolute;
+  top :20px;
+  left :295px;
+  display:block;
+  height:340px;
+}
+
+.pitch:before{
+  content: "";
+  border: 1px solid white;
+  position: absolute;
+  top :20px;
+  left :20px;
+  display:block;
+  width: 550px;
+  height:340px;
+}
+
+.center-circle{
+  position: absolute;
+  top: 145px;
+  left: 250px;
+  width: 90px;
+  height: 90px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.center-circle:after{
+  position: absolute;
+  top: 43px;
+  left: 43px;
+  width: 1px;
+  height: 1px;
+  background-color:white;
+  content:"";
+  border:1px solid white;
+}
+
+.penalty-area{
+  position: absolute;
+  height: 140px;
+  width: 80px;
+  top: 120px;
+  border: 1px solid white;
+}
+
+.left .penalty-area{
+  left: 20px;
+  border-left: 0;
+}
+
+.right .penalty-area{
+  right: 19px;
+  border-right: 0;
+}
+
+.penalty-area:before{
+  position: absolute;
+  height: 70px;
+  width: 35px;
+  top: 35px;
+  border: 1px solid white;
+  content:"";
+}
+.left .penalty-area:before{
+  left:0px;
+  border-left:0;
+}
+.right .penalty-area:before{
+  right:0px;
+  border-right:0;
+}
+
+.penalty-area:after{
+  position: absolute;
+  height: 2px;
+  width: 2px;
+  top: 70px;
+  background-color:white;
+  content:"";
+}
+.left .penalty-area:after{
+  right:15px;
+}
+.right .penalty-area:after{
+  left:15px;
+}
+
+.player{
+  position:absolute;
+  border-radius:50%;
+  width:10px;
+  height:10px;
+}
+.player:after{
+  font-size:10px;
+  position:absolute;
+  left:3px;
+}
+.home-team .player{
+  background:red;
+}
+.home-team .player.one{
+  top:190px;
+  left:20px;
+  background:gray;
+}
+.home-team .player.one:after{
+  content:"1";
+}
+.home-team .player.two{
+  top:310px;
+  left:80px;
+}
+.home-team .player.two:after{
+  content:"2";
+}
+.home-team .player.three{
+  top:60px;
+  left:80px;
+}
+.home-team .player.three:after{
+  content:"3";
+}
+.home-team .player.four{
+  top:145px;
+  left:80px;
+}
+.home-team .player.four:after{
+  content:"4";
+}
+.home-team .player.five{
+  top:225px;
+  left:80px;
+}
+.home-team .player.five:after{
+  content:"5";
+}
+.home-team .player.six{
+  top:310px;
+  left:160px;
+}
+.home-team .player.six:after{
+  content:"6";
+}
+.home-team .player.seven{
+  top:60px;
+  left:160px;
+}
+.home-team .player.seven:after{
+  content:"7";
+}
+.home-team .player.eight{
+  top:145px;
+  left:160px;
+}
+.home-team .player.eight:after{
+  content:"8";
+}
+.home-team .player.nine{
+  top:225px;
+  left:160px;
+}
+.home-team .player.nine:after{
+  content:"9";
+}
+.home-team .player.ten{
+  top:145px;
+  left:240px;
+}
+.home-team .player.ten:after{
+  content:"10";
+  left:0px;
+}
+.home-team .player.eleven{
+  top:225px;
+  left:240px;
+}
+.home-team .player.eleven:after{
+  content:"11";
+  left:0px;
+}
+.visitor-team .player{
+  background:blue;
+}
+.visitor-team .player:after{
+  color:white;
+}
+.visitor-team .player.one{
+  top:190px;
+  right:20px;
+  background:cyan;
+}
+.visitor-team .player.one:after{
+  content:"1";
+  color:red;
+}
+.visitor-team .player.two{
+  top:310px;
+  right:80px;
+}
+.visitor-team .player.two:after{
+  content:"2";
+}
+.visitor-team .player.three{
+  top:60px;
+  right:80px;
+}
+.visitor-team .player.three:after{
+  content:"3";
+}
+.visitor-team .player.four{
+  top:145px;
+  right:80px;
+}
+.visitor-team .player.four:after{
+  content:"4";
+}
+.visitor-team .player.five{
+  top:225px;
+  right:80px;
+}
+.visitor-team .player.five:after{
+  content:"5";
+}
+.visitor-team .player.six{
+  top:310px;
+  right:160px;
+}
+.visitor-team .player.six:after{
+  content:"6";
+}
+.visitor-team .player.seven{
+  top:60px;
+  right:160px;
+}
+.visitor-team .player.seven:after{
+  content:"7";
+}
+.visitor-team .player.eight{
+  top:145px;
+  right:160px;
+}
+.visitor-team .player.eight:after{
+  content:"8";
+}
+.visitor-team .player.nine{
+  top:225px;
+  right:160px;
+}
+.visitor-team .player.nine:after{
+  content:"9";
+}
+.visitor-team .player.ten{
+  top:145px;
+  right:240px;
+}
+.visitor-team .player.ten:after{
+  content:"10";
+  left:0px;
+}
+.visitor-team .player.eleven{
+  top:225px;
+  right:240px;
+}
+.visitor-team .player.eleven:after{
+  content:"11";
+  left:0px;
+}
+.player{
+  animation-duration:5s;
+  animation-timing-function:linear;
+  animation-delay:2s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+  animation-play-state:running;
+}
+.home-team .player.nine{
+  animation-name:nine;
+}
+@keyframes nine
+{
+  0%   {left:160px; top:225px;}
+  25%  {left:200px; top:265px;}
+  50%  {left:200px; top:225px;}
+  75%  {left:200px; top:185px;}
+  100% {left:160px; top:225px;}
+}
+.home-team .player.eight{
+  animation-name:eight;
+}
+@keyframes eight
+{
+  0%   {left:160px; top:145px;}
+  25%  {left:200px; top:185px;}
+  50%  {left:200px; top:145px;}
+  75%  {left:200px; top:105px;}
+  100% {left:160px; top:145px;}
+}
