@@ -62,27 +62,27 @@ export default {
   props: {
     borderSize: {
       type: Number,
-      default: 2
+      default: 2,
     },
     receiverColor: {
       type: String,
-      default: '#3873b8'
+      default: '#3873b8',
     },
     visitorColor: {
       type: String,
-      default: '#d61e00'
+      default: '#d61e00',
     },
     borderColor: {
       type: String,
-      default: '#FFFFFF'
+      default: '#FFFFFF',
     },
     playerBorderColor: {
       type: String,
-      default: '#FFFFFF'
+      default: '#FFFFFF',
     },
     playerTextColor: {
       type: String,
-      default: '#FFFFFF'
+      default: '#FFFFFF',
     },
     showName: {
       type: Boolean,
@@ -90,11 +90,11 @@ export default {
     },
     playerRatio: {
       type: Number,
-      default: RATIO.PLAYER.SIZE
+      default: RATIO.PLAYER.SIZE,
     },
     borderStyle: {
       type: String,
-      default: 'solid'
+      default: 'solid',
     },
     receiverSystem: {
       type: Array,
@@ -110,23 +110,23 @@ export default {
     },
     groundBackground: {
       type: String,
-      default: backgroundUrl
+      default: backgroundUrl,
     },
     externalSize: {
       type: Number,
-      default: 10
+      default: 10,
     },
     orientation: {
       type: [Number, String],
-      default: ORIENTATION.PORTRAIT
+      default: ORIENTATION.PORTRAIT,
     },
     receivers: {
       type: Array,
-      default: []
+      default: [],
     },
     visitors: {
       type: Array,
-      default: []
+      default: [],
     },
   },
   data() {
@@ -140,7 +140,7 @@ export default {
     }
   },
   mounted() {
-    this.ground = this.$refs.ground
+    this.ground = this.$refs.ground;
   },
   created() {
   },
@@ -150,9 +150,9 @@ export default {
         return {
           w: this.$refs.ground.clientWidth,
           h: this.$refs.ground.clientHeight
-        }
+        };
       }
-      return {w: 0, h: 0}
+      return {w: 0, h: 0};
     },
   },
   methods: {
