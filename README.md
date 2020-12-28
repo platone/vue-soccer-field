@@ -1,4 +1,4 @@
-# vue-soccer-field-sample
+# vue-soccer-field
 
 > A Soccer Field vue component
 
