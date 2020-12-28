@@ -2,7 +2,7 @@
   <div class="ground" ref="ground" :style="groundStyle()">
     <div class="zone" :style="zoneStyle('home')">
       <div class="receiver-team">
-        <div v-for="(player, index) in receivers" :key="index" class="player" :style="playerStyle(index, player, 'home', homeSystem)">
+        <div v-for="(player, index) in receivers" :key="index" class="player" :style="playerStyle(index, player, 'home', receiverSystem)">
           <div class="player-number" :style="playerNumberStyle(index, player, 'home')">{{player.number}}</div>
           <div class="player-name" v-if="showName" :style="playerNameStyle()"><span>{{player.name}}</span>
           </div>
@@ -80,10 +80,6 @@ export default {
       type: String,
       default: '#FFFFFF'
     },
-    playerBackgroundColor: {
-      type: String,
-      default: '#FFFFFF'
-    },
     playerTextColor: {
       type: String,
       default: '#FFFFFF'
@@ -100,7 +96,7 @@ export default {
       type: String,
       default: 'solid'
     },
-    homeSystem: {
+    receiverSystem: {
       type: Array,
       default: function () {
         return SYSTEMS.S433;
@@ -117,7 +113,7 @@ export default {
       default: backgroundUrl
     },
     externalSize: {
-      type: [Number, String],
+      type: Number,
       default: 10
     },
     orientation: {
