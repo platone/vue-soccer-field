@@ -2,6 +2,8 @@
 
 > A Soccer Field vue sample
 
+<img src="https://raw.githubusercontent.com/platone/vue-soccer-field/main/screenshot/vue-soccer-field-1.png" width="200" />
+
 ## Installation
 
 ``` bash
