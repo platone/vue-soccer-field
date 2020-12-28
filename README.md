@@ -1,6 +1,6 @@
 # vue-soccer-field-sample
 
-> A Soccer Field vue sample
+> A Soccer Field vue component
 
 <img src="https://raw.githubusercontent.com/platone/vue-soccer-field/main/screenshot/vue-soccer-field-1.png" width="200" />
 
