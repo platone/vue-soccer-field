@@ -28,6 +28,12 @@
                         :visitor-system="systems.S451"/>
     </div>
     <br/>
+    433 vs 343
+    <div style="width: 800px; height: 400px;" class="center">
+      <vue-soccer-field orientation="landscape" :visitors="visitors" :receivers="receivers" :receiver-system="systems.S433"
+                        :visitor-system="systems.S343"/>
+    </div>
+    <br/>
     <h2>{{ colorSubtitle }}</h2>
     <div style="width: 400px; height: 800px;" class="center">
       <vue-soccer-field orientation="portrait" :visitors="visitors" :receivers="receivers" receiver-color="purple"
