@@ -11,15 +11,33 @@
       <vue-soccer-field orientation="portrait" :visitors="visitors" :receivers="receivers"/>
     </div>
     <h2>{{ systemSubtitle }}</h2>
+    442 vs 3421
     <div style="width: 800px; height: 400px;" class="center">
-      <vue-soccer-field orientation="landscape" :visitors="visitors" :receivers="receivers" :home-system="systems.S433"
-                        :visitor-system="systems.S3421" border-style="dotted"/>
+      <vue-soccer-field orientation="landscape" :visitors="visitors" :receivers="receivers" :receiver-system="systems.S442"
+                        :visitor-system="systems.S3421"/>
+    </div>
+    <br/>
+    352 vs 4231
+    <div style="width: 800px; height: 400px;" class="center">
+      <vue-soccer-field orientation="landscape" :visitors="visitors" :receivers="receivers" :receiver-system="systems.S352"
+                        :visitor-system="systems.S4231"/>
+    </div>
+    433 vs 451
+    <div style="width: 800px; height: 400px;" class="center">
+      <vue-soccer-field orientation="landscape" :visitors="visitors" :receivers="receivers" :receiver-system="systems.S433"
+                        :visitor-system="systems.S451"/>
+    </div>
+    <br/>
+    433 vs 343
+    <div style="width: 800px; height: 400px;" class="center">
+      <vue-soccer-field orientation="landscape" :visitors="visitors" :receivers="receivers" :receiver-system="systems.S433"
+                        :visitor-system="systems.S343"/>
     </div>
     <br/>
     <h2>{{ colorSubtitle }}</h2>
     <div style="width: 400px; height: 800px;" class="center">
       <vue-soccer-field orientation="portrait" :visitors="visitors" :receivers="receivers" receiver-color="purple"
-                        visitor-color="orange" border-color="blue" player-border-color="yellow"/>
+                        visitor-color="orange" border-color="blue" player-border-color="yellow" border-style="dotted"/>
     </div>
     <br/>
     <h2>{{ unamedSubtitle }}</h2>
